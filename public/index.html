@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/output.css" rel="stylesheet" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"></script>
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        width: 100%;
+        height: 300vh;
+      }
+
+      .swiper-slide img {
+        display: block;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Swiper -->
+    
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <section
+            class="w-full border-box transition-all duration-500 linear bg-white"
+          >
+            <style>
+              @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+              .header-2-2 .btn-outline {
+                border: 1px solid #555b61;
+                color: #555b61;
+                transition: 0.3s;
+              }
+
+              .header-2-2 .btn-outline:hover {
+                border: 1px solid #27c499;
+                color: #27c499;
+                transition: 0.3s;
+              }
+
+              .header-2-2 .btn-outline:hover div path {
+                fill: #27c499;
+                transition: 0.3s;
+              }
+
+              .header-2-2 .btn-fill {
+                border: 1px solid #27c499;
+                background-color: #27c499;
+                transition: 0.3s;
+              }
+
+              .header-2-2 .nav-text {
+                color: #1d1e3c;
+                transition: 0.2s;
+              }
+
+              .header-2-2 .title-font {
+                color: #272e35;
+                line-height: 1.2;
+              }
+
+              .header-2-2 .navigation a:hover,
+              .header-2-2 .active::after {
+                font-weight: 600;
+                transition: 0.3s;
+              }
+
+              .header-2-2 .small-text {
+                color: #27c499;
+              }
+
+              .header-2-2 .btn-try {
+                background-color: #27c499;
+                transition: 0.3s;
+              }
+            </style>
+            <!-- Navbar -->
+            <div class="header-2-1 m-auto" style="font-family: 'Poppins', sans-serif">
+              
+              <!-- Hero -->
+
+              
+              <div class="content-2-2 animasikan animate__animated animate__backInDown" data-animation="animate__animated animate__backInDown " style="font-family: 'Poppins', sans-serif">
+                <div
+                  class="container lg:px-32 md:px-8 sm:px-12 px-5 pt-4 pb-4 mx-auto"
+                >
+                  <div
+                    class="items-center justify-center"
+                    x-data="beer()"
+                    x-init="start()"
+                  >
+                    <div class="">      
+                      <!-- <img src="../src/img/loving.svg" class="h-1/4 w-auto"> -->
+
+                      <h1 class="text-3xl text-center mb-3 font-extralight">
+                        <p>The Wedding of</p>
+                      </h1>
+                      <h1 class="text-3xl text-center mb-3 font-extralight">
+                        <p>Ardya & Hajrul</p>
+                      </h1>
+                      <div
+                        class="text-6xl text-center flex w-full items-center justify-center"
+                      >
+                        <div class="w-24 mx-1 p-2 bg-white rounded-lg">
+                          <div class="font-mono leading-none" x-text="days">00</div>
+                          <div class="font-mono uppercase text-sm leading-none">
+                            Hari
+                          </div>
+                        </div>
+                        <div class="w-24 mx-1 p-2 bg-white rounded-lg">
+                          <div class="font-mono leading-none" x-text="hours">00</div>
+                          <div class="font-mono uppercase text-sm leading-none">
+                            Jam
+                          </div>
+                        </div>
+                        <div class="w-24 mx-1 p-2 bg-white rounded-lg">
+                          <div class="font-mono leading-none" x-text="minutes">
+                            00
+                          </div>
+                          <div class="font-mono uppercase text-sm leading-none">
+                            Menit
+                          </div>
+                        </div>
+                        <div class="w-24 mx-1 p-2 bg-white rounded-lg">
+                          <div class="font-mono leading-none" x-text="seconds">
+                            00
+                          </div>
+                          <div class="font-mono uppercase text-sm leading-none">
+                            Detik
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </section>
+        
+        
+        
+        </div>
+
+        <div class="swiper-slide">
+          <section class="h-full w-full border-box bg-white">
+            <div>
+              <div
+                class="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col"
+              >
+                <!-- Left Column -->
+                <div
+                  class="mx-auto lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center"
+                  >
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Resepsi</h5>
+                  
+                  Kampung Baru no 74 RT3/RW5, Kel. Tanjung Sari, Kec. Belakang Padang
+                </div>
+                <!-- Right Column -->
+                <div data-animation="animate__animated animate__pulse" class="content-2-2 animasikan w-full lg:w-1/2 text-center justify-center flex pr-0">
+                      <img id="hero" src="../src/img/foto1.jpg" class="h-1/4" />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="h-full w-full border-box bg-white">
+            <div>
+              <div
+                class="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col"
+              >
+                <!-- Left Column -->
+                <div
+                  class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center"
+                  >
+                  <h1
+                    class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight"
+                  >
+                    The best way
+                  </h1>
+
+                  <div class="animasikan" data-animation="animate__animated animate__backInRight">Example</div>
+                  
+                  <div
+                    class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0"
+                  ></div>
+                </div>
+                <!-- Right Column -->
+                <div >
+                  <div class="w-full lg:w-1/2 text-center justify-center flex pr-0">
+                      <img id="hero" src="../src/img/1.png" alt="" />
+                  </div>
+                  
+                </div>
+
+                
+                
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          <section class="h-full w-full border-box bg-white">
+            <div>
+              <div
+                class="mx-auto flex pt-12 pb-16 lg:pb-20 lg:px-24 md:px-16 sm:px-8 px-8 lg:flex-row flex-col"
+              >
+                <!-- Left Column -->
+                <div
+                  class="lg:flex-grow lg:w-1/2 flex flex-col lg:items-start lg:text-left mb-3 md:mb-12 lg:mb-0 items-center text-center"
+                >
+                  <h1
+                    class="title-font sm:text-5xl lg:text-6xl text-4xl mb-8 font-semibold sm:leading-tight"
+                  >
+                    The best way<br class="lg:block hidden" />
+                    to organize your online learning
+                  </h1>
+                  
+                  <div
+                    class="inline-block items-center mx-auto lg:mx-0 lg:flex justify-center lg:space-x-8 md:space-x-2 sm:space-x-3 space-x-0"
+                  ></div>
+                </div>
+                <!-- Right Column -->
+                <div class="animate">
+                  <div class="w-full lg:w-1/2 text-center justify-center flex pr-0">
+                      <img id="hero" src="../src/img/1.png" alt="" />
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="swiper-slide">
+          Slide
+        </div>
+        <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-slide">Slide 4</div>
+        <div class="swiper-slide">Slide 5</div>
+        <div class="swiper-slide">Slide 6</div>
+        <div class="swiper-slide">Slide 7</div>
+        <div class="swiper-slide">Slide 8</div>
+        <div class="swiper-slide">Slide 9</div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 30,
+        mousewheel: true,
+        on: {
+          slideChangeTransitionStart: function () {
+            $('.animasikan').removeClass("animate__animated animate__backInRight")
+          },
+          slideChangeTransitionEnd: function () {
+
+            $(".animasikan").each(function(){
+              $(this).addClass($(this).attr('data-animation'))
+              }
+            );
+          },
+        }
+      });
+      
+    </script>
+
+    <script>
+      function beer() {
+        return {
+          seconds: "00",
+          minutes: "00",
+          hours: "00",
+          days: "00",
+          distance: 0,
+          countdown: null,
+          beerTime: new Date("May 23, 2022 00:00:00").getTime(),
+          now: new Date().getTime(),
+          start: function () {
+            this.countdown = setInterval(() => {
+              // Calculate time
+              this.now = new Date().getTime();
+              this.distance = this.beerTime - this.now;
+              // Set Times
+              this.days = this.padNum(
+                Math.floor(this.distance / (1000 * 60 * 60 * 24))
+              );
+              this.hours = this.padNum(
+                Math.floor(
+                  (this.distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                )
+              );
+              this.minutes = this.padNum(
+                Math.floor((this.distance % (1000 * 60 * 60)) / (1000 * 60))
+              );
+              this.seconds = this.padNum(
+                Math.floor((this.distance % (1000 * 60)) / 1000)
+              );
+              // Stop
+              if (this.distance < 0) {
+                clearInterval(this.countdown);
+                this.days = "00";
+                this.hours = "00";
+                this.minutes = "00";
+                this.seconds = "00";
+              }
+            }, 100);
+          },
+          padNum: function (num) {
+            var zero = "";
+            for (var i = 0; i < 2; i++) {
+              zero += "0";
+            }
+            return (zero + num).slice(-2);
+          },
+        };
+      }
+    </script>
+  </body>
+</html>
+
+</html>
